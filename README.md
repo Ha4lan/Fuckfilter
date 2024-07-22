@@ -1,0 +1,3 @@
+# Fuck Filter
+検閲とフィルタリングをバイパスする超高速で高精度のシステム。
+Powerd by Hono and Bun
