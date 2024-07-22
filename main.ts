@@ -4,7 +4,7 @@ const app = new Hono()
 
 app.get('/', (c) => {
   let query = c.req.query('q')
-  let URL   = decodeURIComponent(atob(encoded));
+  let URL   = decodeURIComponent(atob(query));
   return c.text('Hello Hono!')
 })
 
