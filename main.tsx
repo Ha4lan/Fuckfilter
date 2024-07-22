@@ -1,3 +1,4 @@
+import type { FC } from 'hono/jsx'
 import { Hono } from 'hono'
 
 const app = new Hono()
