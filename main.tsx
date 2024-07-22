@@ -6,7 +6,7 @@ const app = new Hono()
 app.get('/', (c) => {
   let query = c.req.query('q')
   let url   = decodeURIComponent(atob(query));
-  return c.text(URL)
+  return c.text(url)
 })
 
 Deno.serve(app.fetch)
