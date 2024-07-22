@@ -4,8 +4,11 @@ import { Hono } from 'hono'
 const app = new Hono()
 
 app.get('/', (c) => {
+  try{
   let query = c.req.query('q')
   let url   = decodeURIComponent(atob(query));
+  }catch
+  { c.status(500)}
   return c.text(url)
 })
 
